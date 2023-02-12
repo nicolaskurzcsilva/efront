@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background: #fafafa;
+}
+
+/* :root {
+    
+} */
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* -------------------------------------------- */
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+    
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    transition: 0.5s linear;
+}    
+
+body.dark {
+    background-color: #3b3b3b;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background: #111;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.3s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: yellow;
+}
+
+.fa-sun {
+    color: orange;
+}
+
+.fa-moon, .fa-sun {
+    background: transparent;
+}
+
+/* --------------------------------- */
+
+.container-header {
+    height: 8rem;
+    width: 100%;
+    background-color: #2b2b2b;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    box-shadow: 0px 13px 15px -3px rgba(123,123,123,0.3);
+}
+
+.text-header, .text-header h1 {
+    background-color: transparent;
+    color: rgb(170, 0, 255);
+    letter-spacing: 2px;
+}
+
+.menu-itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 4rem;
+    width: 12rem;
+    background-color: transparent;
+}
+
+.menu-itens div {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-itens i {
+    width: 1rem;
+    height: 1rem;
+    transform: scale(2);
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s linear;
+    color: rgb(170, 0, 255);
+}
+
+.menu-itens i:hover {
+    color: white;
+}
+
+/* --------------------------------- */
+
+.container-footer {
+    height: 8rem;
+    width: 100%;
+    background-color: #2b2b2b;
+}
