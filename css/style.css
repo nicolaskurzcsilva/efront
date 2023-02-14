@@ -197,7 +197,7 @@ body.dark {
 /* --------------------------------- */
 
 .container-footer {
-    height: 10rem;
+    height: 16rem;
     width: 100%;
     background-color: #2b2b2b;
 
@@ -205,6 +205,66 @@ body.dark {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.container-footer-content {
+    height: 100%;
+    width: 60%;
+    background-color: transparent/*var(--color-test-1)*/;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-footer-content-social-medias {
+    height: 100%;
+    width: 25%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-footer-content-social-medias, .container-footer-content-social-medias * {
+    background-color: transparent;
+}
+
+.container-footer-content-social-medias-logo {
+    width: 50%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-footer-content-social-medias-logo img {
+    height: 1rem;
+    width: 1rem;
+    transform: scale(3);
+}
+
+.container-footer-content-social-medias-logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-purple-root);
+    margin-top: 5px;
+}
+
+.container-footer-content-social-medias p {
+    color: var(--color-white-root);
+    text-align: justify;
+}
+
+.container-footer-content-social-medias-icons {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .container-footer-info {
@@ -247,6 +307,32 @@ body.dark {
 
 .container-footer-box-info {
     width: 50%;
+}
+
+.container-footer-content-social-medias-icons i {
+    height: 2rem;
+    width: 2rem;
+    transform: scale(1.2);
+    color: var(--color-white-root);
+    background-color: var(--color-black-root);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s linear;
+}
+
+.fa-facebook:hover {
+    background-color: rgb(0, 140, 255);
+}
+
+.fa-instagram:hover {
+    background-color: rgb(255, 98, 0);
+}
+
+.fa-twitch:hover {
+    background-color: var(--color-purple-root);
 }
 
 .container-footer-box-info ul {
