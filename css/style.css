@@ -204,21 +204,22 @@ body.dark {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
 .container-footer-content {
     height: 100%;
-    width: 60%;
-    padding: 1rem;
-    background-color: transparent/*var(--color-test-1)*/;
+    width: 100%;
+    padding: 1rem 10rem;
+    background-color: transparent;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
+/* ---------------------------- Social Medias ---------------------------------- */
 
 .container-footer-content-social-medias {
     height: 100%;
@@ -279,9 +280,39 @@ body.dark {
     justify-content: space-between;
 }
 
+.container-footer-content-social-medias-icons i {
+    height: 2rem;
+    width: 2rem;
+    transform: scale(1.2);
+    color: var(--color-white-root);
+    background-color: var(--color-black-root);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s linear;
+}
+
+.fa-facebook:hover {
+    background-color: rgb(0, 140, 255);
+}
+
+.fa-instagram:hover {
+    background-color: rgb(255, 98, 0);
+}
+
+.fa-twitch:hover {
+    background-color: var(--color-orange-root);
+}
+
+/* ---------------------------- End Social Medias ---------------------------------- */
+
+/* ---------------------------- Usefull Links ---------------------------------- */
+
 .container-footer-content-usefull-links {
     height: 100%;
-    width: 25%;
+    padding: 0 1rem;
     
     display: flex;
     flex-direction: column;
@@ -289,7 +320,7 @@ body.dark {
 }
 
 .container-footer-content-usefull-links, .container-footer-content-usefull-links * {
-    background: red;
+    background: transparent;
     color: var(--color-white-root);
     font-style: italic;
     
@@ -313,9 +344,12 @@ body.dark {
     color: var(--color-orange-root);
 }
 
+/* ---------------------------- End Usefull Links ---------------------------------- */
+
+/* ---------------------------- Address ---------------------------------- */
+
 .container-footer-content-address {
     height: 100%;
-    width: 25%;
 
     display: flex;
     flex-direction: column;
@@ -323,10 +357,49 @@ body.dark {
 }
 
 .container-footer-content-address, .container-footer-content-address * {
-    background: red;
+    background: transparent;
     color: var(--color-white-root);
     font-style: italic;
 }
+
+/* ---------------------------- End Address ---------------------------------- */
+
+/* ---------------------------- Navigation ---------------------------------- */
+
+.container-footer-content-navigation {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-footer-content-navigation, .container-footer-content-navigation * {
+    background: transparent;
+    color: var(--color-white-root);
+    font-style: italic;
+    
+    transition: 0.2s linear;
+}
+
+.container-footer-content-navigation div {
+    height: 70%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-footer-content-navigation a {
+    cursor: pointer;
+}
+
+.container-footer-content-navigation a:hover {
+    color: var(--color-orange-root);
+}
+
+/* ---------------------------- End Navigation ---------------------------------- */
 
 .container-footer-info {
     display: flex;
@@ -364,32 +437,6 @@ body.dark {
 
 .container-footer-box-info {
     width: 50%;
-}
-
-.container-footer-content-social-medias-icons i {
-    height: 2rem;
-    width: 2rem;
-    transform: scale(1.2);
-    color: var(--color-white-root);
-    background-color: var(--color-black-root);
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s linear;
-}
-
-.fa-facebook:hover {
-    background-color: rgb(0, 140, 255);
-}
-
-.fa-instagram:hover {
-    background-color: rgb(255, 98, 0);
-}
-
-.fa-twitch:hover {
-    background-color: var(--color-orange-root);
 }
 
 .container-footer-box-info ul {
