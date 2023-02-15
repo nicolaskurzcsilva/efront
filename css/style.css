@@ -161,7 +161,7 @@ body.dark {
 
 .menu-itens {
     height: 4rem;
-    width: 12rem;
+    width: 16rem;
     background-color: transparent;
     
     display: flex;
@@ -169,7 +169,7 @@ body.dark {
     align-items: center;
 }
 
-.menu-itens div {
+.menu-itens .menu-itens-item {
     height: 2rem;
     width: 2rem;
     transform: scale(1.5);
